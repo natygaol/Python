@@ -8,7 +8,7 @@ def lista_regresiva(numero):
 print(lista_regresiva(5))
 
 
-[2,3]
+
 def recibe_dos_numeros(lista):
   print(lista[0])
   return lista[1]
