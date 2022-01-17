@@ -28,3 +28,22 @@ print(directorio_deportes)
 z[0]["y"] = 30
 print(z)
 
+
+"""PARTE 2"""
+
+"""Crea una función iterateDictionary(some_list)para que, dada una lista de diccionarios, 
+la función recorra cada diccionario de la lista e 
+imprima cada llave y el valor asociado. """
+
+def iterateDictionary(some_list):
+  for dictionary in some_list:
+    names = ""
+    for element in dictionary:
+      names += element + ' - ' +  dictionary[element]
+      if(names == "last_name"):
+        names += ""
+      else:
+        names += ","
+    print(names)
+
+iterateDictionary(estudiantes1)
