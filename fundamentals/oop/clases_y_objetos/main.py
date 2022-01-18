@@ -1,7 +1,8 @@
+# archivo y luego la clase
 from Estudiante import Estudiante
 
-naty = Estudiante( "Naty", "García", 45551110 )
-print(naty)
+
+naty = Estudiante("Naty", "García", 45551110)
 print(naty.nombre)
 
 naty.imprime_informacion()

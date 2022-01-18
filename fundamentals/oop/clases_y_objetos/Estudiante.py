@@ -6,7 +6,7 @@
 
 class Estudiante:
   #constructor
-  def ___init___(self, nombre, apellido, id):
+  def __init__(self, nombre, apellido, id):
     # atributos -> son locales a la clase
     self.nombre = nombre
     self.apellido = apellido
@@ -39,3 +39,4 @@ class Estudiante:
   def imprimeDos( self):
     self.imprime_informacion()
     print("mas datos aca")
+
