@@ -1,3 +1,6 @@
+from ast import Return
+
+
 class Usuario:
   #constructor
   def __init__(self , name, email_address):
@@ -8,10 +11,12 @@ class Usuario:
   def hacer_deposito(self, amount):
     # le sumo el dinero que solicita
     self.balance_cuenta += amount
+    return self
 
   def hacer_retiro(self, amount):
     # le resto el dinero que solicita
     self.balance_cuenta -= amount
+    return self
 
   def mostrar_balance_usuario(self):
     # le muestro cuanto dinero tiene actualmente llamando al balance
@@ -21,7 +26,6 @@ class Usuario:
     print(f"User: {self.name}, Balance: {self.balance_cuenta}")
 
   def transferir_dinero(self, amount_to_transfer, user ):
-
     self.balance_cuenta -= amount_to_transfer
     user.balance_cuenta += amount_to_transfer
     
