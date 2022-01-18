@@ -23,3 +23,20 @@ class CuentaBancaria:
       sum += cuenta.balance
     return sum
 
+  def re_tiro(self,amount):
+    # podemos usar el método estático aquí para evaluar
+    # si podemos retirar los fondos sin quedar con balance negativo
+    if CuentaBancaria.puede_retirar(self.balance,amount):
+        self.balance -= amount
+    else:
+        print("Fondos insuficientes")
+    return self
+
+  # los métodos estáticos no tienen acceso a ningún atributo
+  # solo a lo que se le pasa
+  @staticmethod
+  def puede_retirar(balance,amount):
+    if (balance - amount) < 0:
+      return False
+    else:
+      return True
