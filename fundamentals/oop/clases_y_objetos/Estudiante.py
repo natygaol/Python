@@ -6,6 +6,9 @@
 # Una función constructor puede llamar a otro método dentro de la clase?
 
 class Estudiante:
+  
+  programa = "Web Development 3-Full-Stack"
+
   #constructor
   def __init__(self, nombre, apellido, id):
     # atributos -> son locales a la clase
@@ -40,4 +43,5 @@ class Estudiante:
   def imprimeDos( self):
     self.imprime_informacion()
     print("mas datos aca")
+
 
