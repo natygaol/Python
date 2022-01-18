@@ -6,7 +6,7 @@
 # Una función constructor puede llamar a otro método dentro de la clase?
 
 class Estudiante:
-  
+  "atributo de clase"
   programa = "Web Development 3-Full-Stack"
 
   #constructor
