@@ -17,7 +17,7 @@ class Estudiante:
     # para utilizar los atributos del constructor debemos poner self.
     print( self.nombre + " " + self.apellido + " " + str(self.id) )
     
-  # metodo para actualizar nombre serían setters
+  # metodo para actualizar por ejemplo: nombre serían setters
   def set_nombre(self, nuevo_nombre):
     self.nombre = nuevo_nombre
     

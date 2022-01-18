@@ -1,4 +1,4 @@
-# archivo y luego la clase
+# from => archivo import => la clase
 from Estudiante import Estudiante
 
 
