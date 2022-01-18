@@ -4,15 +4,38 @@
 # el arreglo como resultado.
 # 30 => [ 1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 ]
 
+def esPrimo(num2):
+  cont = 0
+  if num2 == 1:
+    return True
+  for x in range(1, num2 + 1):
+    if num2 % x == 0:
+      cont += 1
+  if cont == 2:
+    return True
+  else:
+    return False
+
+# def numerosPrimos(num1):
+#   array_numeros_primos = []
+#   for i in range(1, num1 + 1):
+#     if(num1 % i == 0):
+#       array_numeros_primos.append(i)
+#     # elif(num1 / num1 == 0):
+#     #   array_numeros_primos.append(num1)
+#   print(array_numeros_primos)
+#   return array_numeros_primos
+
+
+# numerosPrimos(11)
+
+
 def numerosPrimos(num1):
   array_numeros_primos = []
-  for i in range(1, num1):
-    if(num1 % i > 0):
+  for i in range(1, num1 + 1):
+    if esPrimo(i) == True:
       array_numeros_primos.append(i)
-    # elif(num1 / num1 == 0):
-    #   array_numeros_primos.append(num1)
-  print(array_numeros_primos)
   return array_numeros_primos
 
-
-numerosPrimos(11)
+resultado = numerosPrimos(30)
+print(resultado)
