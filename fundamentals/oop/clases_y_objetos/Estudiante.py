@@ -3,6 +3,7 @@
 # Python debe tener solo 1 constructor, desde 3.9
 # la clase es la estructura para el objeto
 # el objeto es una instancia de la clase
+# Una función constructor puede llamar a otro método dentro de la clase?
 
 class Estudiante:
   #constructor
