@@ -26,3 +26,11 @@ naty.hacer_retiro(30)
 naty.hacer_retiro(150)
 print(f"User: {naty.name}, Balance: {naty.balance_cuenta}")
 
+naty.transferir_dinero(280, monty)
+
+print(f"User: {naty.name}, Balance: {naty.balance_cuenta}")
+print(f"User: {monty.name}, Balance: {monty.balance_cuenta}")
+
+naty.imprimir_balance()
+# funciones o métodos siempre llevan paréntesis
+# atributos: como naty.name -> se dejan sin parentesis

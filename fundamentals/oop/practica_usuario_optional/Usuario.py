@@ -16,6 +16,14 @@ class Usuario:
   def mostrar_balance_usuario(self):
     # le muestro cuanto dinero tiene actualmente llamando al balance
     return self.balance_cuenta
-  
-  def transferir_dinero(self, user_balance):
+
+  def imprimir_balance(self):
+    print(f"User: {self.name}, Balance: {self.balance_cuenta}")
+
+  def transferir_dinero(self, amount_to_transfer, user ):
+
+    self.balance_cuenta -= amount_to_transfer
+    user.balance_cuenta += amount_to_transfer
     
+# self es referencia a la instancia - al objeto mismo
+# cls es referencia a la clase
