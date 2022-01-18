@@ -16,19 +16,18 @@ def esPrimo(num2):
   else:
     return False
 
-# def numerosPrimos(num1):
-#   array_numeros_primos = []
-#   for i in range(1, num1 + 1):
-#     if(num1 % i == 0):
-#       array_numeros_primos.append(i)
-#     # elif(num1 / num1 == 0):
-#     #   array_numeros_primos.append(num1)
-#   print(array_numeros_primos)
-#   return array_numeros_primos
+def numerosPrimos(num1):
+  array_numeros_primos = []
+  for i in range(1, num1 + 1):
+    if(num1 % i != 0):
+      array_numeros_primos.append(i)
+    # elif(num1 / num1 == 0):
+    #   array_numeros_primos.append(num1)
+  return array_numeros_primos
 
-
-# numerosPrimos(11)
-
+# cuando hay un return, capturo ese return en una variable
+resultado_final = numerosPrimos(11)
+print(resultado_final)
 
 def numerosPrimos(num1):
   array_numeros_primos = []
