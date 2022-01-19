@@ -14,8 +14,14 @@ class Estudiante(Persona):
     self.calificaciones.append(nota)
   
   # sobre escritura del metodo padre, debo usar el mismo nombre del metodo
+  def informacion(self):
+    super().informacion()
+    print("Calificaciones:")
+    print(self.calificaciones)
+
+  # si no quiero sobrescribir, cambio de nombre de la funcion
   def informacionEstudiante(self):
-      super().informacion()
-      print("Calificaciones:")
-      print(self.calificaciones)
+    self().informacion()
+    print("Calificaciones:")
+    print(self.calificaciones)
     
