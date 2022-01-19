@@ -19,7 +19,7 @@ class Estudiante(Persona):
     print("Calificaciones:")
     print(self.calificaciones)
 
-  # si no quiero sobrescribir, cambio de nombre de la funcion
+  # sin sobre escritura, cambio de nombre de la funcion y coloco self, no super
   def informacionEstudiante(self):
     self().informacion()
     print("Calificaciones:")
