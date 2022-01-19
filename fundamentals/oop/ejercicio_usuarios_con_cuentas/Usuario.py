@@ -5,10 +5,10 @@ class Usuario:
     self.email = email_address
     self.cuenta = CuentaBancaria(tasa=0.02, balance=0 )
   
-  def hacer_deposito(self, account_position, amount):
+  def hacer_deposito(self, amount):
     # le sumo el dinero que solicita
-    # self.balance_cuenta += amount
-    # return self
+    self.balance_cuenta += amount
+    return self
 
   def hacer_retiro(self, amount):
     # le resto el dinero que solicita
