@@ -26,7 +26,7 @@ class CuentaBancaria:
   def re_tiro(self,amount):
     # podemos usar el método estático aquí para evaluar
     # si podemos retirar los fondos sin quedar con balance negativo
-    if CuentaBancaria.puede_retirar(self.balance,amount):
+    if CuentaBancaria.puede_retirar(self.balance, amount):
         self.balance -= amount
     else:
         print("Fondos insuficientes")
@@ -40,3 +40,5 @@ class CuentaBancaria:
       return False
     else:
       return True
+
+
