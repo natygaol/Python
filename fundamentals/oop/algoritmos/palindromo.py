@@ -6,7 +6,7 @@
 
 def reverse_string(string):
   reserve_string = string[::-1]
-  if (string == reverse_string):
+  if (reverse_string == string):
     print(string, "Es palindrome")
   else:
     print(string, "No es palindrome")
