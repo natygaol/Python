@@ -24,4 +24,5 @@ class Persona:
     @classmethod
     def imprime_lista_personas(cls):
       for persona in cls.listaPersonas:
-        print(persona.getNombre()+ " " + persona.getApellido())
+        #print(persona.getNombre()+ " " + persona.getApellido())
+        persona.informacion()
