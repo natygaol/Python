@@ -1,12 +1,12 @@
 # from => archivo import => la clase
 from Usuario import Usuario
 
-guido = Usuario("Guido van Rossum", "guido@python.com")
-monty = Usuario("Monty Bronx", "monty@python.com")
-naty = Usuario("Naty García","natygaol@gmail.com")
-print(guido)
-print(monty)
-print(naty)
+# guido = Usuario("Guido van Rossum", "guido@python.com")
+# monty = Usuario("Monty Bronx", "monty@python.com")
+# naty = Usuario("Naty García","natygaol@gmail.com")
+# print(guido)
+# print(monty)
+# print(naty)
 
 # guido.hacer_deposito(500)
 # guido.hacer_deposito(300)
@@ -35,5 +35,11 @@ print(naty)
 # funciones o métodos siempre llevan paréntesis
 # atributos: como naty.name -> se dejan sin parentesis
 
-naty.hacer_deposito(1000).hacer_deposito(50).hacer_deposito(30).hacer_retiro(150).mostrar_balance_usuario()
-naty.imprimir_balance()
+# naty.hacer_deposito(1000).hacer_deposito(50).hacer_deposito(30).hacer_retiro(150).mostrar_balance_usuario()
+# naty.imprimir_balance()
+
+guido = Usuario("Guido van Rossum")
+monty = Usuario("Monty Bronx")
+
+guido.cuenta.deposito(100)
+guido.imprimir_balance()
