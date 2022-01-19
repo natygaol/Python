@@ -3,12 +3,10 @@
 # de atrás hacia adelante.
 # "Hola como estas" => "satse omoc aloH"
 
-def reverseString(string):
+def reverseString(texto):
   reverse_word = ""
-  for i in range(0, len(string), 1):
-    reverse_word.join(string[i])
-  
+  for i in range(len(texto) - 1, -1, -1):
+    reverse_word += texto[i]
   return reverse_word
 
-word = reverseString("Hola")
-print(word)
+print(reverseString("Hola como estas"))
